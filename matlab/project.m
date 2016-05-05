@@ -10,6 +10,6 @@ function [] = project()
         leaving = realisation(1/mu_j(mu, s, j(end)), t, t + 1);
         j(end + 1) = max(j(end) + arriving - leaving, 0);
         t = t + 1;
-        stairs(0:t, j)
     end
+    stairs(0:t, j)
 end
