@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.2.4)  6 MAY 2016 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.2.4)  6 MAY 2016 20:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -625,14 +625,14 @@ LaTeX Font Info:    ... okay on input line 14.
 <matlab/a.png, id=9, 421.575pt x 316.18124pt>
 File: matlab/a.png Graphic file (type png)
  <use matlab/a.png>
-Package pdftex.def Info: matlab/a.png used on input line 22.
+Package pdftex.def Info: matlab/a.png used on input line 35.
 (pdftex.def)             Requested size: 345.0pt x 258.75406pt.
- [2 <./matlab/a.png (PNG copy)>] <simulaatiokuvat.png, id=18, 1166.10657pt x 65
+ [2 <./matlab/a.png (PNG copy)>] <simulaatiokuvat.png, id=19, 1166.10657pt x 65
 1.18282pt>
 File: simulaatiokuvat.png Graphic file (type png)
 
 <use simulaatiokuvat.png>
-Package pdftex.def Info: simulaatiokuvat.png used on input line 42.
+Package pdftex.def Info: simulaatiokuvat.png used on input line 55.
 (pdftex.def)             Requested size: 345.0pt x 192.65369pt.
  [3] [4 <./simulaatiokuvat.png>] [5] (./project.aux) ) 
 Here is how much of TeX's memory you used:
@@ -650,14 +650,15 @@ cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
 r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb>
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm1728.pfb>
-Output written on project.pdf (5 pages, 211298 bytes).
+/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
+super/sfrm1728.pfb>
+Output written on project.pdf (5 pages, 228636 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
