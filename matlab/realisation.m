@@ -6,6 +6,7 @@ function res = realisation( lambda, t1, t2 )
     while t(end) < t2
         t(end + 1) = t(end) + poisson(lambda);
     end
-    res = length(t) - 2; % Koska poisson-funktiota ollaan kutsuttu length(t) - 1 kertaa.
+    res = length(t) - 2; 
+    % Koska poisson-funktiota ollaan kutsuttu length(t) - 1 kertaa.
 end
 

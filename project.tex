@@ -9,11 +9,16 @@
 \usepackage{textcomp}
 \usepackage{ marvosym }
 \usepackage[finnish]{babel}
+\usepackage{listings}
+\usepackage{fancyhdr}
 \title{SCI-C0200 - Fysiikan ja matematiikan menetelmien studio}
 \author{Hampurilaisbaarin jonon simulointi\\ \\ Osama Abuzaid 524832 \\ Joonatan Bergholm 507260}
 \begin{document}                % Aloittaa dokumentin
 \maketitle
 \newpage
+
+\pagestyle{fancy}
+\lstset{language = Matlab}
 
 \section*{Poisson-jakauma}
 
@@ -64,5 +69,21 @@ Jonon keskimääräisen pituuden häntä lyhenee huomattavasti jo ensimmäisen y
 Kahden ylimääräisen kassan tapauksessa jonoja ei enää käytännössä ole: jonon keskimäääräisen pituuden häntä yltää vain 1,4:n asti. Kassojenkaan keskimääräinen lukumäärä ei muutu juuri miksikään edelliseen verrattuna. Kuitenkin voi kysyä, onko näin montaa kassaa järkevää ylläpitää, kun kaikki kassat ovat käytössä vain 18\% ajasta - jokainen lisäkassa nimittäin tarkoittaa lisäkustannuksia. Käytännössä siis tätä enempää kassoja ei kannata ylläpitää.
 
 Jos itse olisin hampurilaisbaarin pitäjä, menisin yhden ylimääräisen kassan strategialla. Kassojen käyttöaste on tällöin järkevä eivätkä jonot pääse kasvamaan kohtuuttoman pitkiksi. Kassoja olisi siis tällöin 4 kappaletta.
+
+\newpage
+
+\appendix
+
+\section{Yleinen lähdekoodi}
+
+\lstinputlisting{matlab/exprand.m}
+\lstinputlisting{matlab/poisson.m}
+\lstinputlisting{matlab/realisation.m}
+
+\section{Tehtävä A}
+
+\lstinputlisting{matlab/project.m}
+
+\section{Tehtävä B}
 
 \end{document}              % Päättää dokumentin

@@ -12,7 +12,7 @@ function [re] = project()
         t = t + 1;
     end
     stairs(0:t, j)
-    xlabel('Aika (h)')
+    xlabel('Aika (min)')
     ylabel('Jonon pituus')
     re = j(end);
 end
