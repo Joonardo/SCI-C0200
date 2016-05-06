@@ -1,4 +1,4 @@
-function [s, j] = dayinabar (lambda, mu, smax)
+function [s, j, maxsprop] = dayinabar (lambda, mu, smax)
     
     j = 0;
     s = 1;
@@ -13,5 +13,7 @@ function [s, j] = dayinabar (lambda, mu, smax)
     end
     j = j-s;
     j(j<0) = 0;
-    
+    maxs = s;
+    maxs(maxs < smax) = [];
+    maxsprop = length(maxs)/length(s);
 end
