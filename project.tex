@@ -8,12 +8,24 @@
 \usepackage{epstopdf}       % Mahdollisuus lisätä *.eps tyyppisiä kuvia                          
 \usepackage{textcomp}
 \usepackage{ marvosym }
+\usepackage[finnish]{babel}
 \title{SCI-C0200 - Fysiikan ja matematiikan menetelmien studio}
-\date{}
-\author{Hampurilaisbaarin jonon simulointi\\ \\ Osama Abuzaid \\ 524832}
+\author{Hampurilaisbaarin jonon simulointi\\ \\ Osama Abuzaid 524832 \\ Joonatan Bergholm 507260}
 \begin{document}                % Aloittaa dokumentin
 \maketitle
 \newpage
+
+\section*{a}
+
+\begin{figure}
+\centering
+\includegraphics[width = \textwidth]{matlab/a.png}
+\caption{Tilanne kun vain kaksi kassaa on käytössä.}
+\label{fig:a}
+\end{figure}
+
+Kuvassa \ref{fig:a} näkyy jonon pituuden kehitys, kun vain kaksi kassaa on auki. Tämä olisi hampurilaisyrittäjän kannalta erittäin epäedullinen tilanne. Monte Carlo -simulaatiolla saadaan keskimäärin jonon pituudeksi päivän lopussa noin 83.
+
 \section*{b}
 Kassahenkilökuntaa on oltava käytettävissä vähintään sen verran, että jono ei pääse kasvamaan mielivaltaisesti. Tämä tapahtuu silloin, kun odotusarvoisesti asiakkaita tulee yhtä nopeasti sisään kuin niitä menee myös ulos. Mallin mukaan asiakkaita poistuu keskimäärin $\frac{1}{\mu_j}$ minuutissa ja autoja tulee $\lambda$ autoa aikayksikössä. Jotta jonon pitus ei pääsisi pitkällä aikavälillä kasvamaan, on oltava
 \begin{align}

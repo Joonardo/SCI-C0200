@@ -1,4 +1,4 @@
-function [] = project()
+function [re] = project()
     s = 2;
     j = [0];
     t = 0;
@@ -14,4 +14,5 @@ function [] = project()
     stairs(0:t, j)
     xlabel('Aika (h)')
     ylabel('Jonon pituus')
+    re = j(end);
 end
