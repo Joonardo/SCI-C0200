@@ -1,0 +1,25 @@
+\documentclass{article}     % Määritellään luotavan dokumentin tyyppi
+
+\usepackage{amsmath}        % Matematiikkapaketti
+\usepackage[utf8]{inputenc} % UTF-8 merkistö 
+\usepackage[T1]{fontenc}    % Tuki ääkkösille
+\usepackage{parskip}        % Rivinvaihto kappaleiden väliin, ei sisennystä
+\usepackage{graphicx}       % Grafiikkapaketti kuvien lisäämiseen
+\usepackage{epstopdf}       % Mahdollisuus lisätä *.eps tyyppisiä kuvia                          
+\usepackage{textcomp}
+\usepackage{ marvosym }
+\title{SCI-C0200 - Fysiikan ja matematiikan menetelmien studio}
+\date{}
+\author{Hampurilaisbaarin jonon simulointi\\ \\ Osama Abuzaid \\ 524832}
+\begin{document}                % Aloittaa dokumentin
+\maketitle
+\newpage
+\section*{b}
+Kassahenkilökuntaa on oltava käytettävissä vähintään sen verran, että jono ei pääse kasvamaan mielivaltaisesti. Tämä tapahtuu silloin, kun odotusarvoisesti asiakkaita tulee yhtä nopeasti sisään kuin niitä menee myös ulos. Mallin mukaan asiakkaita poistuu keskimäärin $\frac{1}{\mu_j}$ minuutissa ja autoja tulee $\lambda$ autoa aikayksikössä. Jotta jonon pitus ei pääsisi pitkällä aikavälillä kasvamaan, on oltava
+\begin{align*}
+\max(\frac{1}{\mu_j}) = \lambda\\
+\frac{s}{\mu_j} = \lambda\\
+s = \mu_j \lambda.
+\end{align*}
+Näin ollen kassahenkilökuntaa on oltava saatavilla vähintään $\lceil \mu_j \lambda \rceil$ kappaletta, jotta jonon pituus pysyy kutakuinkin vakiona. Kuitenkin pahimpien ruuhkien varalta kannattaa olla jokunen lisäkassa käytettävissä, jotta jonojen pituudet voidaan laskea halutulle tasolle.
+\end{document}              % Päättää dokumentin

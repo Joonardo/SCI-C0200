@@ -1,0 +1,19 @@
+function [] = project()
+    smin = 1;
+    smax = 4;
+    j = [0];
+    t = 0;
+    lambda = 40/60;
+    mu = 4;
+    
+    while t < 8*60
+        s(end+1) = floor(min(max(j(end)*mu*lambda, smin), 3));
+        arriving = realisation(lambda, t, t + 1);
+        leaving = realisation(1/mu_j(mu, s(end), j(end)), t, t + 1);
+        j(end + 1) = max(j(end) + arriving - leaving, 0);
+        t = t + 1;
+    end
+    stairs(0:t, j)
+    figure
+    stairs(s)
+end
