@@ -6,4 +6,3 @@ function r = exprand( N, lambda )
     r = -1/lambda*log(1 - rand(N, 1));
 
 end
-

@@ -4,6 +4,6 @@ function re = project()
     while t(end) < 1
         t(end + 1) = t(end) + poisson(lambda);
     end
-    %stairs(t, 1:length(t))
+    stairs(t, 1:length(t))
     re = length(t) - 1;
 end
