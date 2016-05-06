@@ -1,9 +1,17 @@
-function re = project()
-    t = [0];
-    lambda = 40;
-    while t(end) < 1
-        t(end + 1) = t(end) + poisson(lambda);
+function [] = project()
+    s = 2;
+    j = [0];
+    t = 0;
+    lambda = 40/60;
+    mu = 4;
+    
+    while t < 8*60
+        arriving = realisation(lambda, t, t + 1);
+        leaving = realisation(1/mu_j(mu, s, j(end)), t, t + 1);
+        j(end + 1) = max(j(end) + arriving - leaving, 0);
+        t = t + 1;
     end
-    stairs(t, 1:length(t))
-    re = length(t) - 1;
+    stairs(0:t, j)
+    xlabel('Aika (h)')
+    ylabel('Jonon pituus')
 end
