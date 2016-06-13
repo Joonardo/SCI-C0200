@@ -23,9 +23,10 @@
 
 \section*{Johdanto}
 
+<<<<<<< HEAD
 Työn tarkoituksena on selvittää Niittykummun Mc\LaTeX'in drive in -hampurilaisbaarin kassojen optimmalinen lukumäärä, kun asiakkaita mittauksen mukaan saapuu keskimäärin $\lambda = 40$ per tunti (eli $\lambda = \frac{2}{3 \mathrm{min}}$) ja yhden asiakkaan palvelimiseen menee keskimäärin 4 minuuttia. Lisäksi tiedetään, että palveluaika on eksponenttijakautunut ja että asiakkaita saapuu Poisson($\lambda$)-prosessin mukaisesti. \par
 Hampurilaisbaarin, kuten minkä tahansa muunkin yrityksen omistaja, pyrkii minimoimaan kustannuksiaan heikentämättä tuotteensa tai palvelunsa tasoa, sillä silloin pystytään tekemään enemmän voittoa ja ylimääräisen kassahenkilökunnan palkkaaminen lisää kuluja, joten kassojen lukumäärä kannattaa yrittää pitää mahdollisimman pienenä. Tästä syystä ongelma on hampurilasbaarin omistajalle mielenkiintoinen. \par
-Eräs tapa ratkaista tämä ongelma on Monte Carlo -simulaatio, jossa samaa satunaisuutta sisältävää simulaatiota ajetaan useita kertoja ja näiden simulaatioiden lopputuloksista kootaan lopullinen tulos. Tässä kyseissä ongelmassa voidaan ajaa samaa simulaatiota useita kertoja eri kassojen lukumäärillä ja tutkia, että kuinka monta kassaa tarvitaan, jotta jonot eivät kasva liian suuiksi.
+Eräs tapa ratkaista tämä ongelma on Monte Carlo -simulaatio, jossa samaa satunaisuutta sisältävää simulaatiota ajetaan useita kertoja ja näiden simulaatioiden lopputuloksista kootaan lopullinen tulos. Tässä kyseissä ongelmassa voidaan ajaa samaa simulaatiota useita kertoja eri kassojen lukumäärillä ja tutkia, että kuinka monta kassaa tarvitaan, jotta jonot eivät kasva liian suuriksi.
 
 
 \section*{Poisson-jakauma}
@@ -76,7 +77,12 @@ Jonon keskimääräisen pituuden häntä lyhenee huomattavasti jo ensimmäisen y
 
 Kahden ylimääräisen kassan tapauksessa jonoja ei enää käytännössä ole: jonon keskimäääräisen pituuden häntä yltää vain 1,4:n asti. Kassojenkaan keskimääräinen lukumäärä ei muutu juuri miksikään edelliseen verrattuna. Kuitenkin voi kysyä, onko näin montaa kassaa järkevää ylläpitää, kun kaikki kassat ovat käytössä vain 18\% ajasta - jokainen lisäkassa nimittäin tarkoittaa lisäkustannuksia. Käytännössä siis tätä enempää kassoja ei kannata ylläpitää.
 
-Jos itse olisin hampurilaisbaarin pitäjä, menisin yhden ylimääräisen kassan strategialla. Kassojen käyttöaste on tällöin järkevä eivätkä jonot pääse kasvamaan kohtuuttoman pitkiksi. Kassoja olisi siis tällöin 4 kappaletta.
+Hampurilaisbaarin pitäjän kannattaisi siis varata tilaa neljälle kassalle. Kassojen käyttöaste on tällöin järkevä eivätkä jonot pääse kasvamaan kohtuuttoman pitkiksi.
+
+\section*{Mallin rajoitteet}
+Malli olettaa ihmisten tulevan koko aukioloajan aikana samalla todennäköisyydellä, vaikka todellisuudessa ihmisruuhkassa on merkittäviä eroja päivän sisällä. Työaikaan ihmisiä todennäköisesti käy huomattavasti vähemmän kuin vapaa-ajalla. Lisäksi malli olettaa, että kassahenkilökuntaa voidaan lisätä ja vähentää mielivaltaisella nopeudella. Todellisuudessa ravintoloissa henkilökunnalla on yleensä muitakin tehtäviä kuin kassan ylläpito, mikä hidastaa prosessia.
+
+Myös oletus siitä, että asioimisaika on eksponentiaalijakautunutta, ei ole täysin oikea. Pikaruokaravintoloissa usein pitkään miettivät asiakkaat kehoitetaan menemään sivulle valintaa tekemään, jotta muita asiakkaita voitaisiin palvella sen aikaa. Tällöin jonon etenemisajan odotusarvo pienenee ajan edetessä, toisin kuin eksponenttijakautuneella satunnaismuuttujalla. Tätä voisi simuloida arvioimalla maksimiaikaa, jonka asiakas käyttää kassalla ennen siirtymistä kassan sivuun.
 
 \newpage
 
