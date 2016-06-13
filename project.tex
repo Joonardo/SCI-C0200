@@ -23,7 +23,7 @@
 
 \section*{Johdanto}
 
-Työn tarkoituksena on selvittää Niittykummun Mc\LaTeX'in drive in -hampurilaisbaarin kassojen optimmalinen lukumäärä, kun asiakkaita mittauksen mukaan saapuu keskimäärin $\lambda = 40$ per tunti ja yhden asiakkaan palvelimiseen menee keskimäärin 4 minuuttia. Lisäksi tiedetään, että palveluaika on eksponenttijakautunut ja että asiakkaita saapuu Poisson($\lambda$)-prosessin mukaisesti. \par
+Työn tarkoituksena on selvittää Niittykummun Mc\LaTeX'in drive in -hampurilaisbaarin kassojen optimmalinen lukumäärä, kun asiakkaita mittauksen mukaan saapuu keskimäärin $\lambda = 40$ per tunti (eli $\lambda = \frac{2}{3 \mathrm{min}}$) ja yhden asiakkaan palvelimiseen menee keskimäärin 4 minuuttia. Lisäksi tiedetään, että palveluaika on eksponenttijakautunut ja että asiakkaita saapuu Poisson($\lambda$)-prosessin mukaisesti. \par
 Hampurilaisbaarin, kuten minkä tahansa muunkin yrityksen omistaja, pyrkii minimoimaan kustannuksiaan heikentämättä tuotteensa tai palvelunsa tasoa, sillä silloin pystytään tekemään enemmän voittoa ja ylimääräisen kassahenkilökunnan palkkaaminen lisää kuluja, joten kassojen lukumäärä kannattaa yrittää pitää mahdollisimman pienenä. Tästä syystä ongelma on hampurilasbaarin omistajalle mielenkiintoinen. \par
 Eräs tapa ratkaista tämä ongelma on Monte Carlo -simulaatio, jossa samaa satunaisuutta sisältävää simulaatiota ajetaan useita kertoja ja näiden simulaatioiden lopputuloksista kootaan lopullinen tulos. Tässä kyseissä ongelmassa voidaan ajaa samaa simulaatiota useita kertoja eri kassojen lukumäärillä ja tutkia, että kuinka monta kassaa tarvitaan, jotta jonot eivät kasva liian suuiksi.
 
